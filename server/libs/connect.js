@@ -67,7 +67,7 @@ const getQconfConf = key => {
   })()
 }
 
-export {
+module.exports = {
   getQconfAllHost,
   getQconfConf,
   getQconfHost,

@@ -1,7 +1,7 @@
-import fetch from 'node-fetch'
-import crypto from 'crypto'
-import logger from './logger'
-import { getQconfHost } from './connect'
+const fetch = require('node-fetch')
+const crypto = require('crypto')
+const logger = require('./logger')
+const { getQconfHost } = require('./connect')
 
 async function request({
   url,
@@ -53,4 +53,4 @@ async function request({
   return result
 }
 
-export default request
+module.exports = request
